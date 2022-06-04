@@ -1,0 +1,15 @@
+﻿<div class="main-section ">
+    <form class="col-12 text-center" action="/auth/login" method="post">
+        <span  id="inCorrecto">@Html.ValidationMessage("Login")</span>
+        <div class="mb-3">
+            <input type="text" class="text-center form-control" name="Username" placeholder="username" />
+        </div>
+        <div class="mb-3">
+            <input type="password" class="text-center form-control" name="Password" placeholder="password" />
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar </button>
+    </form>
+    <div class="col-12 forgot">
+        <a href="/auth/register"><i class="button"></i> Registrarse </a>
+    </div>
+</div>

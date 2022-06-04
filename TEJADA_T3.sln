@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEJADA_T3", "TEJADA_T3\TEJADA_T3.csproj", "{A5A520A5-5E65-4BBF-9CFA-A8BB9E70CB02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEJADA_T3_TEST", "TEJADA_T3_TEST\TEJADA_T3_TEST.csproj", "{E807269A-0818-4A23-925C-10626731F8D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5A520A5-5E65-4BBF-9CFA-A8BB9E70CB02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A520A5-5E65-4BBF-9CFA-A8BB9E70CB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A520A5-5E65-4BBF-9CFA-A8BB9E70CB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A520A5-5E65-4BBF-9CFA-A8BB9E70CB02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E807269A-0818-4A23-925C-10626731F8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E807269A-0818-4A23-925C-10626731F8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E807269A-0818-4A23-925C-10626731F8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E807269A-0818-4A23-925C-10626731F8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDA9F538-A2D9-4209-874D-07CC8D0E80A4}
+	EndGlobalSection
+EndGlobal

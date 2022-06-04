@@ -1,0 +1,17 @@
+﻿<div class="main-section ">
+    <form class="col-12 text-center" action="/auth/register" method="post">
+        <div class="mb-3">
+            <input type="text" class="text-center form-control" name="Username" placeholder="Username" />
+        </div>
+        <span id="inCorrecto">@Html.ValidationMessage("Username")</span>
+        <div class="mb-3">
+            <input type="password" class="text-center form-control" name="Password" placeholder="Password" />
+        </div>
+        <span id="inCorrecto">@Html.ValidationMessage("Password")</span>
+        <div class="mb-3">
+            <input type="password" class="text-center form-control" name="passwordConf" placeholder="Confirm Password" />
+        </div>
+        <span id="inCorrecto">@Html.ValidationMessage("PasswordConf")</span>
+        <button type="submit" class="btn btn-primary">REGISTRAR</button>
+    </form>
+</div>

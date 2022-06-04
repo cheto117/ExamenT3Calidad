@@ -1,0 +1,81 @@
+﻿<form action="/home/privacy" method="post">
+    <div class="mb-3">
+        <label class="form-label">Fecha de Registro</label>
+        <input type="date" class="form-control" name="FechaRegistro" placeholder="Fecha de Registro">
+        <span id="inCorrecto">@Html.ValidationMessage("FechaRegistro")</span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Fecha de Nacimiento</label>
+        <input type="date" class="form-control" name="FechaNacimiento" placeholder="Fecha de Nacimiento">
+        <span id="inCorrecto">@Html.ValidationMessage("FechaNacimiento")</span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Nombre de la mascota</label>
+        <input type="text" class="form-control" name="Mascota" placeholder="Nombre de la mascota">
+        <span id="inCorrecto">@Html.ValidationMessage("Mascota")</span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Tamaño de la mascota</label>
+        <input type="number" class="form-control" name="Tamano" placeholder="Tamaño de la mascota">
+        <span id="inCorrecto">@Html.ValidationMessage("Tamano")</span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Datos Particulares de la mascota</label>
+        <textarea class="form-control" placeholder="Datos Particulares de la mascota" name="DatosParticulares" style="height: 100px"></textarea>
+        <span id="inCorrecto">@Html.ValidationMessage("DatosParticulares")</span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Nombre del Dueño</label>
+        <input type="text" class="form-control" name="Dueno" placeholder="Nombre del Dueño">
+        <span id="inCorrecto">@Html.ValidationMessage("Dueno")</span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Direccion del Dueño</label>
+        <input type="text" class="form-control" name="DuenoDireccion" placeholder="Direccion del Dueño">
+        <span id="inCorrecto">@Html.ValidationMessage("DuenoDireccion")</span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email del Dueño</label>
+        <input type="email" class="form-control" name="Email" placeholder="Email del Dueño">
+        <span id="inCorrecto">@Html.ValidationMessage("Email")</span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Telefono del dueño</label>
+        <input type="number" class="form-control" name="Telefono" placeholder="Telefono del dueño">
+        <span id="inCorrecto">@Html.ValidationMessage("Telefono")</span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Sexo de la mascota</label>
+        <select id="IdSexo" name="IdSexo" class="form-control">
+            <option value="">-- Selecciona un Genero --</option>
+            @foreach (var item in ViewBag.Sexo)
+            {
+                <option value="@item.Id">@item.Nombre</option>
+            }
+        </select>
+        <span id="inCorrecto">@Html.ValidationMessage("IdSexo")</span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Especie de la mascota</label>
+        <select id="IdEspecie" name="IdEspecie" class="form-control" onchange="cargarRaza()">
+            <option value="">-- Selecciona una Especie --</option>
+            @foreach (var item in ViewBag.Especie)
+            {
+                <option value="@item.Id">@item.Nombre</option>
+            }
+        </select>
+        <span id="inCorrecto">@Html.ValidationMessage("IdEspecie")</span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Raza de la mascota</label>
+        <select id="IdRaza" name="IdRaza" class="form-control">
+            <option value="">-- Selecciona una raza --</option>
+        </select>
+        <span id="inCorrecto">@Html.ValidationMessage("IdRaza")</span>
+    </div>
+    <button type="submit" class="btn btn-primary">REGISTRAR</button>
+</form>
+
+@section Scripts {
+    <script src="~/js/site.js"></script>
+}

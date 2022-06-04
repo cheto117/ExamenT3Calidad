@@ -1,0 +1,29 @@
+﻿@{ var Historis = (List<Historia>)Model;}
+<div class="text-center">
+    <h1 class="display-4">Historias de Mascotas</h1>
+</div>
+
+<a href="/home/privacy" class="btn btn-primary">Nuevo registro</a>
+<br />
+<br />
+<br />
+<div class="row text-center">
+    @foreach (var item in Historis)
+    {
+        <div class="card col-sm-6">
+            <h4 class="card-header text-center"><strong>@item.Codigo - @item.Dueno - @item.Mascota</strong></h4>
+            <div class="card-body">
+                <p class="card-text"><strong>Fecha de Nacimiento: </strong>@string.Format("{0:dd MMMM yyyy}", item.FechaNacimiento)</p>
+                <p class="card-text"><strong>Fecha de Registro: </strong>@string.Format("{0:dd MMMM yyyy}", item.FechaRegistro)</p>
+                <p class="card-text"><strong>Direccion del Dueño: </strong>@item.DuenoDireccion</p>
+                <p class="card-text"><strong>Telefono del Dueño: </strong>@item.Telefono</p>
+                <p class="card-text"><strong>Email del Dueño: </strong>@item.Email</p>
+                <p class="card-text"><strong>Sexo Mascota: </strong>@item.Sexo.Nombre</p>
+                <p class="card-text"><strong>Especie Mascota: </strong>@item.Especie.Nombre</p>
+                <p class="card-text"><strong>Raza Mascota: </strong>@item.Raza.Nombre</p>
+                <p class="card-text"><strong>Datos Particulares: </strong>@item.DatosParticulares</p>
+                <p class="card-text"><strong>Tamaño: </strong>@item.Tamano</p>
+            </div>
+        </div>
+    }
+</div>
